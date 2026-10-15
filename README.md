@@ -6,19 +6,21 @@ An end-to-end exploratory analysis of about 1.7 million crime reports from the C
 
 ## Key findings
 
-> Fill in after running the notebook (section 9 prints the numbers). Each finding = a number + what it means for decisions. Example format:
-> - **Theft is X% of all incidents but ends in arrest only Y% of the time.** Prevention likely pays off more than enforcement for this crime.
+1,687,190 crime reports from the City of Chicago, 2019–2025.
 
-- 
-- 
-- 
-- 
+- **Crime dipped, rebounded, and is now below pre-pandemic levels.** Reports fell 18.7% in 2020, climbed back to 263,856 in 2023 (slightly above 2019), and ended 2025 at 238,145, which is **9.1% below 2019**.
+- **Car theft is the outlier.** While general theft fell by a third in 2020, motor vehicle theft rose every year, peaking in 2023 at **3.3× its 2019 level**, and was still nearly double (1.9×) in 2025. No other major crime type moved like this, so it deserves its own investigation rather than being lumped into "property crime".
+- **Most crimes never lead to an arrest, and the rate is falling.** Only 14.9% of incidents ended in an arrest, down from 21.5% in 2019 to a low of 11.8% in 2022 (16.1% in 2025). Theft (6.6%), car theft (3.3%) and fraud (2.9%) are almost never solved, while weapons violations (63.8%) usually are, because police discover those during stops. Arrest rates reflect how a crime comes to light as much as police effort.
+- **More than half of all batteries are domestic (55.2%).** Domestic incidents make up 19.6% of all crime. These happen inside homes, where street patrols can't reach, so prevention needs social services as well as policing.
+- **Crime is concentrated.** 18 of Chicago's 77 community areas account for half of all incidents, and Austin alone accounts for 5.3%. These are raw counts, not rates per resident: busy areas like the Loop draw many visitors.
+- **Timing is predictable.** Summer months average 19% more incidents than winter months. Thefts peak at noon, while criminal damage and car theft peak at 10 pm, a useful split for planning shifts.
+
+_Data quality: 3.4% of incidents are logged at exactly midnight because the true time is unknown (45% of human trafficking reports), so they're excluded from the hour-of-day analysis. Otherwise it would show a false midnight spike._
 
 ## Charts
 
-> These appear after you run the notebook (it saves every chart to `images/`).
-
 ![Monthly trend](images/01_monthly_trend.png)
+![Crime types indexed to 2019](images/02_types_indexed.png)
 ![Weekday by hour](images/03_weekday_hour_heatmap.png)
 ![Top crime types and arrest rates](images/04_top_types_arrest_rate.png)
 
